@@ -1,0 +1,94 @@
+body {
+    background: url('RNHS Bg.jpeg') no-repeat;
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+    margin: 0; /* Remove default margin */
+    background-position:center;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the overlay behind the content */
+  }
+
+  body h1 {
+    color: white;
+  }
+
+  img {
+    border-radius: 70px;
+  }
+
+  marquee {
+    color: white;
+  }
+  
+  .signup-container {
+    max-width: 350px;
+    max-height: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color:lavender;
+    border-radius:40px;    
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(black);
+    border-radius: 100px;
+  }
+  
+  /* Style for radio container */
+  .radio-container {
+    display: flex;
+    align-items:center ;
+  }
+  
+  /* Hide the actual radio button */
+  .radio-container input[type="radio"] {
+    display:flex;
+  }
+  
+  /* Style for custom radio button */
+  .radio-btn {
+    width: 10px;
+    height: 10px;
+    border-radius:50%;   
+    margin-right: 8px;
+    cursor: pointer;
+    display: flex; 
+  }
+  
+  /* Style for custom radio button when selected */
+  .radio-btn::before {
+    content: '\2022'; /* Unicode character for a bullet */
+    color: black;
+    font-size: 20px;
+  }
+    
+    .terms-container {
+    margin: 20px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  label {
+    font-size: 15px;
+  }
